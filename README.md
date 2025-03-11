@@ -15,7 +15,7 @@ Things you may want to cover:
     - SQLite
 
 * Database creation
-    - rails db:create
+    - rails db:setup
 
 * Database initialization
     - rails db:migrate
