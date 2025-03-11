@@ -66,6 +66,7 @@ SQLite
     }
 
   - /api/v1/session/create
+  <pre>
     params: { 
       "data": { 
         "user": {
@@ -77,7 +78,7 @@ SQLite
           "access_token":""
         }
     }
-
+  </pre>
   - /api/v1/session/destroy
     params: { 
       "data": { 
