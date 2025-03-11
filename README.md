@@ -6,18 +6,16 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version 
-3.1.4p223
+    - 3.1.4p223
 
 * System dependencies
-SQLite
-
-* Configuration
+    - SQLite
 
 * Database creation
-- rails db:create
+    - rails db:create
 
 * Database initialization
-- rails db:migrate
+    - rails db:migrate
 
 * How to run the test suite
 
@@ -27,6 +25,7 @@ SQLite
 
 * ROTAS
   - /api/v1/user/create
+  ```
     params: { 
       "data": { 
         "user": {
@@ -38,8 +37,9 @@ SQLite
           "access_token":""
         }
     }
-    
+  ```
   - /api/v1/user/update
+  ```
     params: { 
       "data": { 
         "user": {
@@ -51,8 +51,9 @@ SQLite
           "access_token":""
         }
     }
-
+  ```
   - /api/v1/user/destroy
+  ```
     params: { 
       "data": { 
         "user": {
@@ -64,9 +65,9 @@ SQLite
           "access_token":""
         }
     }
-
+  ```
   - /api/v1/session/create
-  <pre>
+  ```
     params: { 
       "data": { 
         "user": {
@@ -78,8 +79,9 @@ SQLite
           "access_token":""
         }
     }
-  </pre>
+  ```
   - /api/v1/session/destroy
+  ```
     params: { 
       "data": { 
         "user": {
@@ -91,4 +93,4 @@ SQLite
           "access_token":""
         }
     }
-
+  ```
