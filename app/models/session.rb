@@ -4,5 +4,8 @@ class Session < ApplicationRecord
   def generate_access_token
     numb = 10000 + rand(10000)
     self.access_token = "#{numb}#{Time.now.strftime('%d%m%Y%S%M%H')}"
+    self.save
+
+    self.access_token
   end
 end

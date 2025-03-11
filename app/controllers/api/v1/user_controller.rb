@@ -1,8 +1,8 @@
 class Api::V1::UserController < ApplicationController
 
   def create
-    @user = User.create user_params[:user]
-    if @user.save!
+    @user = User.new user_params[:user]
+    if @user.save
       render json: { 
         data: { username: @user.username }, 
         message: "Usuário cadastrado com sucesso. Pode iniciar uma nova sessão" 
@@ -18,7 +18,6 @@ class Api::V1::UserController < ApplicationController
   def update
     @user = User.find_by(username: user_params[:user][:username])
     @session = Session.find_by(user: @user)
-    
   end
 
   def destroy

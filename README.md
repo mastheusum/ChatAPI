@@ -8,6 +8,9 @@ Things you may want to cover:
 * Ruby version 
     - 3.1.4p223
 
+* Rails version
+    - 7.2.2.1 
+
 * System dependencies
     - SQLite
 
