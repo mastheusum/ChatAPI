@@ -8,4 +8,8 @@ class Session < ApplicationRecord
 
     self.access_token
   end
+
+  def current_user username, access_token
+    return access_token == self.access_token
+  end
 end

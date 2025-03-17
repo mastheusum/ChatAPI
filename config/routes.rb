@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
+      get "chat/send"
+      get "chat/receive"
       post "session/create"
       delete "session/destroy"
 
