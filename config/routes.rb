@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       post "chat/send_content"
       get "chat/receive_content"
+      get "chat/channels_list"
 
       post "session/create"
       delete "session/destroy"

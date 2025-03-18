@@ -102,7 +102,7 @@ Things you may want to cover:
         }
     }
   ```
-  - api/v1/chat/send_content
+  - POST api/v1/chat/send_content
   ```
     params: {
       "data":{
@@ -112,12 +112,26 @@ Things you may want to cover:
           },
           "message" : {
               "chat":"",
-              "content": "!"
+              "content": ""
           }
       }
   }
   ```
-  - api/v1/chat/receive_content
+  - GET api/v1/chat/receive_content
+  ```
+    params: {
+    "data":{
+        "session":{
+            "username": "",
+            "access_token": ""
+        },
+        "message":{
+          "chat":""
+        }
+      }
+    }
+  ```
+  - GET api/v1/chat/channels_list
   ```
     params: {
     "data":{
@@ -125,6 +139,6 @@ Things you may want to cover:
             "username": "",
             "access_token": ""
         }
+      }
     }
-}
   ```
